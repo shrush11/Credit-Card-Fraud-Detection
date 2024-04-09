@@ -1,11 +1,11 @@
-Clone the project repository from GitHub.
+1. Clone the project repository from GitHub.
 
-Open Visual Studio Code for editing.
+2. Open Visual Studio Code for editing.
 
-Install necessary libraries for Flask, ensuring smooth deployment.
+3. Install necessary libraries for Flask, ensuring smooth deployment.
 
-Access the ccfd.py file and execute it in the terminal using Python.
+4. Access the ccfd.py file and execute it in the terminal using Python.
 
-Open your preferred web browser and navigate to the provided link.
+5. Open your preferred web browser and navigate to the provided link.
 
-Input the transaction details to swiftly detect potential fraud, leveraging the power of Random Forest Classifier and Flask deployment.
+6. Input the transaction details to swiftly detect potential fraud, leveraging the power of Random Forest Classifier and Flask deployment.
