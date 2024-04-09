@@ -1,0 +1,992 @@
+Id,Contract_Type,Gender,Marital_Status,Education_Level,Birth_Year,Age,Employment,Mobile_Number,Card_Number,Card_Expiry,Transaction_Device_Type,Card_Limit,Transaction_Amount,Transaction_Type,Transaction_Location,Card_Type,Card_Verification_Method,Monthly_Income,Annual_Income,EMI_Amount,Previous_Transaction_Count,Transaction_Hour,Is_Foreign_Transaction,Is_High_Transaction_Amount,Merchant_Risk_Score,Card_Usage_Location_Distance,Has_Recent_Card_Update,Transaction_Frequency_Weekday,Transaction_Frequency_Weekend,Fraud_Status
+1,Fixed,Female,Married,Graduate,1970,52,Employed,1111111111,2222222222222222,2025,Desktop,300000,5000,Purchase,Mumbai,Visa,Online,80000,960000,10000,50,10,False,True,0.8,10,True,10,10,1
+2,Variable,Male,Single,High School,1980,42,Unemployed,3333333333,4444444444444444,2026,Mobile,100000,2000,Withdrawal,Delhi,MasterCard,Offline,50000,600000,5000,10,15,True,False,0.7,20,False,20,15,0
+3,Fixed,Male,Single,Post Graduate,1990,32,Self-Employed,5555555555,6666666666666666,2024,Tablet,400000,4000,Transfer,Bangalore,Visa,Online,100000,1200000,8000,100,5,True,True,0.6,30,False,5,5,1
+4,Fixed,Female,Divorced,Doctorate,1975,47,Employed,7777777777,8888888888888888,2027,Desktop,200000,6000,Purchase,Kolkata,MasterCard,Offline,120000,1440000,2000,150,20,False,False,0.5,40,True,40,20,0
+5,Variable,Other,Divorced,Post Graduate,1985,37,Unemployed,9999999999,0000000000000000,2028,Mobile,250000,3000,Withdrawal,Pune,Visa,Online,60000,720000,7000,200,1,True,True,0.4,50,True,5,25,1
+6,Fixed,Female,Single,Graduate,1988,34,Employed,1234567890,1111111111111111,2023,Tablet,350000,7000,Transfer,Chennai,MasterCard,Offline,70000,840000,3000,80,8,False,False,0.3,60,False,20,30,0
+7,Fixed,Male,Single,High School,1978,44,Self-Employed,2345678901,2222222222222222,2024,Mobile,150000,2500,Purchase,Hyderabad,Visa,Online,90000,1080000,6000,30,3,False,True,0.2,70,True,35,10,1
+8,Variable,Female,Married,High School,1982,40,Employed,3456789012,3333333333333333,2029,Desktop,180000,4500,Withdrawal,Mumbai,MasterCard,Offline,150000,1800000,4000,60,18,False,False,0.1,80,False,10,15,0
+9,Fixed,Other,Married,Graduate,1972,50,Unemployed,4567890123,4444444444444444,2025,Tablet,170000,5500,Transfer,Delhi,Visa,Online,110000,1320000,9000,40,6,True,True,0.9,90,False,15,20,1
+10,Variable,Male,Divorced,Graduate,1965,57,Employed,5678901234,5555555555555555,2026,Mobile,220000,3500,Withdrawal,Bangalore,MasterCard,Offline,130000,1560000,3000,10,12,True,False,0.8,100,True,25,5,0
+11,Fixed,Female,Divorced,Post Graduate,1976,46,Self-Employed,6789012345,6666666666666666,2027,Desktop,240000,8000,Purchase,Kolkata,Visa,Online,140000,1680000,2000,90,9,True,True,0.7,10,False,5,30,1
+12,Fixed,Other,Married,Doctorate,1990,32,Employed,7890123456,7777777777777777,2028,Tablet,200000,5000,Transfer,Chennai,MasterCard,Offline,150000,1800000,5000,20,15,True,False,0.6,20,True,30,20,0
+13,Variable,Male,Single,Graduate,1970,52,Unemployed,8901234567,8888888888888888,2029,Mobile,260000,1500,Withdrawal,Hyderabad,Visa,Online,170000,2040000,4000,80,16,True,True,0.5,30,False,10,40,1
+14,Fixed,Female,Married,High School,1980,42,Employed,9012345678,9999999999999999,2023,Desktop,230000,6500,Purchase,Pune,MasterCard,Offline,160000,1920000,3000,60,14,False,False,0.4,40,True,5,50,0
+15,Fixed,Other,Married,Graduate,1975,47,Self-Employed,0123456789,1111111111111111,2024,Tablet,210000,7500,Transfer,Mumbai,Visa,Online,180000,2160000,7000,50,8,True,False,0.3,50,False,15,15,1
+16,Variable,Male,Single,Doctorate,1978,44,Unemployed,1234567890,3333333333333333,2025,Mobile,180000,4000,Withdrawal,Delhi,MasterCard,Offline,190000,2280000,4000,10,20,True,True,0.2,60,True,20,25,0
+17,Fixed,Female,Divorced,Post Graduate,1982,40,Employed,2345678901,5555555555555555,2026,Desktop,190000,3000,Purchase,Bangalore,Visa,Online,200000,2400000,6000,40,10,False,False,0.1,70,False,30,10,1
+18,Variable,Other,Married,High School,1985,37,Self-Employed,3456789012,6666666666666666,2027,Tablet,250000,5500,Transfer,Kolkata,MasterCard,Offline,220000,2640000,2000,30,6,True,True,0.9,80,False,10,20,0
+19,Fixed,Male,Married,Graduate,1973,49,Unemployed,4567890123,7777777777777777,2028,Mobile,270000,6000,Withdrawal,Chennai,Visa,Online,210000,2520000,8000,70,18,False,True,0.8,90,True,20,30,1
+20,Fixed,Female,Single,High School,1969,53,Employed,5678901234,8888888888888888,2029,Desktop,200000,2500,Purchase,Hyderabad,MasterCard,Offline,230000,2760000,5000,20,12,True,False,0.7,100,False,5,15,0
+21,Fixed,Female,Single,Post Graduate,1978,45,Unemployed,7654321098,9999999999999999,2028,Desktop,220000,5500,Purchase,Delhi,Visa,Online,190000,2280000,4000,60,15,False,False,0.9,90,False,20,20,1
+22,Variable,Male,Divorced,High School,1980,43,Self-Employed,8765432109,1111111111111111,2029,Tablet,230000,4000,Withdrawal,Bangalore,MasterCard,Offline,180000,2160000,3000,70,12,False,True,0.8,80,True,15,25,0
+23,Fixed,Female,Married,Graduate,1975,48,Employed,9876543210,2222222222222222,2027,Mobile,240000,6500,Transfer,Mumbai,Visa,Online,200000,2400000,7000,50,18,True,False,0.7,70,False,30,10,1
+24,Fixed,Other,Married,Doctorate,1985,37,Unemployed,1098765432,3333333333333333,2028,Desktop,250000,7500,Purchase,Chennai,MasterCard,Offline,220000,2640000,6000,30,10,True,True,0.6,60,True,25,20,0
+25,Variable,Female,Divorced,Post Graduate,1973,49,Employed,2109876543,4444444444444444,2029,Mobile,260000,3000,Withdrawal,Kolkata,Visa,Online,210000,2520000,8000,70,8,False,False,0.5,50,True,10,30,1
+26,Fixed,Male,Single,Graduate,1969,53,Self-Employed,3210987654,5555555555555555,2027,Tablet,270000,6000,Transfer,Hyderabad,MasterCard,Offline,220000,2640000,2000,30,20,True,True,0.4,40,False,15,10,0
+27,Fixed,Female,Single,High School,1971,51,Employed,4321098765,6666666666666666,2028,Desktop,280000,2500,Purchase,Delhi,Visa,Online,240000,2880000,5000,20,12,False,False,0.3,30,False,20,15,1
+28,Variable,Male,Married,High School,1984,38,Unemployed,5432109876,7777777777777777,2029,Mobile,290000,5500,Withdrawal,Bangalore,MasterCard,Offline,250000,3000000,4000,70,18,False,True,0.2,20,True,25,25,0
+29,Fixed,Other,Married,Graduate,1970,52,Employed,6543210987,8888888888888888,2027,Tablet,300000,4000,Transfer,Mumbai,Visa,Online,260000,3120000,3000,80,16,True,False,0.1,10,False,10,30,1
+30,Variable,Male,Divorced,Graduate,1963,59,Self-Employed,7654321098,9999999999999999,2028,Desktop,310000,6500,Purchase,Kolkata,MasterCard,Offline,270000,3240000,7000,50,8,True,True,0.9,90,True,15,20,0
+41,Fixed,Female,Single,Post Graduate,1985,37,Employed,1234567890,2222222222222222,2029,Desktop,420000,5500,Purchase,Chennai,Visa,Online,380000,4560000,6000,60,20,False,True,0.7,70,False,20,30,1
+42,Variable,Male,Single,High School,1978,44,Self-Employed,2345678901,3333333333333333,2026,Mobile,430000,6500,Withdrawal,Hyderabad,MasterCard,Offline,390000,4680000,4000,50,8,True,False,0.6,60,True,25,20,0
+43,Fixed,Female,Married,Graduate,1973,49,Unemployed,3456789012,4444444444444444,2029,Tablet,440000,6000,Transfer,Delhi,Visa,Online,400000,4800000,2000,70,16,False,True,0.5,50,False,30,40,1
+44,Fixed,Other,Married,Doctorate,1988,34,Employed,4567890123,5555555555555555,2027,Desktop,450000,4000,Purchase,Mumbai,MasterCard,Offline,410000,4920000,3000,10,12,True,False,0.4,40,True,10,15,0
+45,Variable,Female,Divorced,Post Graduate,1977,45,Employed,5678901234,6666666666666666,2028,Mobile,460000,7500,Withdrawal,Kolkata,Visa,Online,420000,5040000,7000,80,18,False,True,0.3,30,True,20,25,1
+46,Fixed,Male,Single,Graduate,1970,52,Self-Employed,6789012345,7777777777777777,2027,Tablet,470000,3000,Transfer,Bangalore,MasterCard,Offline,430000,5160000,5000,50,8,True,True,0.2,20,False,25,30,0
+47,Fixed,Female,Single,High School,1982,40,Employed,7890123456,8888888888888888,2029,Desktop,480000,5500,Purchase,Chennai,Visa,Online,440000,5280000,4000,70,10,False,False,0.1,10,False,15,20,1
+48,Variable,Male,Married,High School,1975,47,Unemployed,8901234567,9999999999999999,2028,Mobile,490000,7000,Withdrawal,Delhi,MasterCard,Offline,450000,5400000,2000,40,16,True,True,0.9,90,True,10,10,0
+49,Fixed,Other,Married,Graduate,1971,51,Employed,9012345678,1111111111111111,2029,Tablet,500000,6000,Transfer,Mumbai,Visa,Online,460000,5520000,6000,50,14,False,True,0.8,80,False,20,25,1
+50,Variable,Male,Divorced,Graduate,1965,57,Self-Employed,0123456789,2222222222222222,2028,Desktop,510000,7500,Purchase,Kolkata,MasterCard,Offline,470000,5640000,4000,70,8,True,False,0.7,70,True,25,30,0
+51,Fixed,Female,Single,Post Graduate,1983,39,Employed,9876543210,3333333333333333,2029,Mobile,520000,3000,Withdrawal,Bangalore,Visa,Online,480000,5760000,3000,30,18,True,True,0.6,60,False,30,40,1
+52,Variable,Male,Single,High School,1979,43,Unemployed,8765432109,4444444444444444,2027,Tablet,530000,5500,Transfer,Mumbai,MasterCard,Offline,490000,5880000,5000,60,20,True,False,0.5,50,True,10,15,0
+53,Fixed,Female,Married,Graduate,1974,48,Employed,7654321098,5555555555555555,2028,Desktop,540000,4000,Purchase,Chennai,Visa,Online,500000,6000000,7000,70,12,False,True,0.4,40,False,20,25,1
+54,Fixed,Other,Married,Doctorate,1989,33,Self-Employed,6543210987,6666666666666666,2029,Mobile,550000,6000,Withdrawal,Delhi,MasterCard,Offline,510000,6120000,2000,50,8,True,True,0.3,30,True,25,30,0
+55,Variable,Female,Divorced,Post Graduate,1976,46,Employed,5432109876,7777777777777777,2028,Tablet,560000,7500,Transfer,Kolkata,Visa,Online,520000,6240000,4000,70,16,False,False,0.2,20,True,10,15,1
+56,Fixed,Male,Single,Graduate,1968,54,Unemployed,4321098765,8888888888888888,2027,Desktop,570000,3000,Purchase,Bangalore,MasterCard,Offline,530000,6360000,3000,80,18,True,True,0.1,10,False,30,40,0
+57,Fixed,Female,Single,High School,1981,41,Employed,3210987654,9999999999999999,2029,Mobile,580000,5500,Withdrawal,Mumbai,Visa,Online,540000,6480000,6000,50,14,False,True,0.9,90,False,20,25,1
+58,Variable,Male,Married,High School,1976,46,Unemployed,2109876543,1111111111111111,2028,Tablet,590000,6000,Transfer,Delhi,MasterCard,Offline,550000,6600000,5000,60,8,True,False,0.8,80,True,25,30,0
+59,Fixed,Other,Married,Graduate,1972,50,Employed,0987654321,2222222222222222,2029,Desktop,600000,4000,Purchase,Kolkata,Visa,Online,560000,6720000,4000,70,12,True,True,0.7,70,False,10,15,1
+60,Variable,Male,Divorced,Graduate,1966,56,Self-Employed,9876543210,3333333333333333,2028,Mobile,610000,7500,Withdrawal,Chennai,MasterCard,Offline,570000,6840000,3000,50,16,True,False,0.6,60,True,30,40,0
+61,Fixed,Female,Single,Post Graduate,1984,38,Employed,8765432109,4444444444444444,2029,Tablet,620000,3000,Transfer,Hyderabad,Visa,Online,580000,6960000,5000,60,18,False,True,0.5,50,False,20,25,1
+62,Variable,Male,Single,High School,1980,42,Unemployed,7654321098,5555555555555555,2028,Desktop,630000,5500,Purchase,Delhi,MasterCard,Offline,590000,7080000,6000,70,14,True,False,0.4,40,True,25,30,0
+63,Fixed,Female,Married,Graduate,1975,47,Employed,6543210987,6666666666666666,2029,Mobile,640000,4000,Withdrawal,Kolkata,Visa,Online,600000,7200000,4000,50,8,False,True,0.3,30,True,10,15,1
+64,Fixed,Other,Married,Doctorate,1990,32,Self-Employed,5432109876,7777777777777777,2028,Tablet,650000,7500,Transfer,Bangalore,MasterCard,Offline,610000,7320000,3000,80,12,True,False,0.2,20,False,20,25,0
+65,Variable,Female,Divorced,Post Graduate,1974,48,Employed,4321098765,8888888888888888,2029,Desktop,660000,6000,Purchase,Hyderabad,Visa,Online,620000,7440000,5000,50,16,True,True,0.1,10,True,25,30,1
+66,Fixed,Male,Single,Graduate,1969,53,Unemployed,3210987654,9999999999999999,2028,Mobile,670000,5500,Withdrawal,Delhi,MasterCard,Offline,630000,7560000,6000,70,18,True,False,0.9,90,False,10,15,0
+67,Fixed,Female,Single,High School,1981,41,Employed,2109876543,1111111111111111,2029,Tablet,680000,3000,Transfer,Mumbai,Visa,Online,640000,7680000,3000,60,8,False,True,0.8,80,False,20,25,1
+68,Variable,Male,Married,High School,1976,46,Unemployed,0987654321,2222222222222222,2028,Desktop,690000,5500,Purchase,Kolkata,MasterCard,Offline,650000,7800000,4000,50,12,True,False,0.7,70,True,25,30,0
+69,Fixed,Other,Married,Graduate,1972,50,Employed,9876543210,3333333333333333,2029,Mobile,700000,7500,Withdrawal,Chennai,Visa,Online,660000,7920000,5000,40,16,True,True,0.6,60,True,10,15,1
+70,Variable,Male,Divorced,Graduate,1967,55,Self-Employed,8765432109,4444444444444444,2028,Tablet,710000,6000,Transfer,Delhi,MasterCard,Offline,670000,8040000,4000,80,20,False,False,0.5,50,False,25,30,0
+71,Fixed,Female,Married,Post Graduate,1976,46,Employed,7654321098,5555555555555555,2029,Desktop,720000,4000,Purchase,Kolkata,Visa,Online,680000,8160000,3000,70,12,True,True,0.4,40,True,20,25,1
+72,Fixed,Other,Married,Doctorate,1991,31,Self-Employed,6543210987,6666666666666666,2028,Mobile,730000,5500,Withdrawal,Hyderabad,MasterCard,Offline,690000,8280000,6000,60,18,True,False,0.3,30,False,10,15,0
+73,Variable,Female,Divorced,High School,1975,47,Employed,5432109876,7777777777777777,2029,Tablet,740000,3000,Transfer,Bangalore,Visa,Online,700000,8400000,5000,50,8,False,True,0.2,20,True,25,30,1
+74,Fixed,Male,Single,Post Graduate,1970,52,Unemployed,4321098765,8888888888888888,2028,Desktop,750000,6000,Purchase,Chennai,MasterCard,Offline,710000,8520000,4000,80,12,True,False,0.1,10,False,10,15,0
+75,Fixed,Female,Single,Graduate,1980,42,Employed,3210987654,9999999999999999,2029,Mobile,760000,7500,Withdrawal,Delhi,Visa,Online,720000,8640000,3000,70,16,False,True,0.9,90,True,20,25,1
+76,Variable,Male,Married,Graduate,1974,48,Unemployed,2109876543,1111111111111111,2028,Tablet,770000,5500,Transfer,Mumbai,MasterCard,Offline,730000,8760000,5000,50,20,True,False,0.8,80,False,25,30,0
+77,Fixed,Other,Married,High School,1971,51,Employed,0987654321,2222222222222222,2029,Desktop,780000,6000,Purchase,Kolkata,Visa,Online,740000,8880000,4000,60,12,True,True,0.7,70,True,10,15,1
+78,Variable,Male,Divorced,Post Graduate,1966,56,Self-Employed,9876543210,3333333333333333,2028,Mobile,790000,3000,Withdrawal,Hyderabad,MasterCard,Offline,750000,9000000,3000,50,8,True,False,0.6,60,True,25,30,0
+79,Fixed,Female,Married,High School,1977,45,Employed,8765432109,4444444444444444,2029,Tablet,800000,7500,Transfer,Chennai,Visa,Online,760000,9120000,5000,70,16,True,True,0.5,50,False,30,35,1
+80,Fixed,Other,Married,Doctorate,1992,30,Unemployed,7654321098,5555555555555555,2028,Desktop,810000,5500,Purchase,Delhi,MasterCard,Offline,770000,9240000,4000,80,20,True,False,0.4,40,True,15,20,0
+81,Variable,Female,Divorced,Graduate,1977,45,Employed,6543210987,6666666666666666,2029,Mobile,820000,3000,Withdrawal,Mumbai,Visa,Online,780000,9360000,3000,50,8,False,True,0.3,30,True,20,25,1
+82,Fixed,Male,Single,Post Graduate,1970,52,Employed,5432109876,7777777777777777,2029,Tablet,830000,6000,Transfer,Kolkata,MasterCard,Offline,790000,9480000,5000,60,12,False,False,0.2,20,False,25,30,0
+83,Fixed,Female,Single,Graduate,1981,41,Self-Employed,4321098765,8888888888888888,2028,Desktop,840000,7500,Purchase,Bangalore,Visa,Online,800000,9600000,3000,70,16,True,True,0.1,10,True,10,15,1
+84,Variable,Other,Married,High School,1975,47,Employed,3210987654,9999999999999999,2029,Mobile,850000,5500,Withdrawal,Hyderabad,MasterCard,Offline,810000,9720000,4000,50,20,True,False,0.9,90,False,25,30,0
+85,Fixed,Male,Divorced,Post Graduate,1972,50,Unemployed,2109876543,1111111111111111,2028,Tablet,860000,6000,Transfer,Delhi,Visa,Online,820000,9840000,5000,60,12,False,True,0.8,80,True,30,35,1
+86,Fixed,Female,Married,High School,1977,45,Employed,0987654321,2222222222222222,2029,Desktop,870000,3000,Purchase,Mumbai,MasterCard,Offline,830000,9960000,3000,70,16,True,False,0.7,70,True,15,20,0
+87,Variable,Other,Married,Graduate,1973,49,Self-Employed,9876543210,3333333333333333,2028,Mobile,880000,6000,Withdrawal,Kolkata,Visa,Online,840000,10080000,5000,50,8,False,True,0.6,60,False,20,25,1
+88,Fixed,Male,Single,Doctorate,1978,44,Employed,8765432109,4444444444444444,2029,Tablet,890000,7500,Transfer,Chennai,MasterCard,Offline,850000,10200000,4000,60,12,True,False,0.5,50,True,25,30,0
+89,Fixed,Female,Single,Graduate,1982,40,Unemployed,7654321098,5555555555555555,2028,Desktop,900000,5500,Purchase,Delhi,Visa,Online,860000,10320000,3000,70,16,True,True,0.4,40,False,10,15,1
+90,Variable,Other,Married,High School,1976,46,Employed,6543210987,6666666666666666,2029,Mobile,910000,3000,Withdrawal,Mumbai,MasterCard,Offline,870000,10440000,3000,50,20,True,False,0.3,30,True,25,30,0
+91,Fixed,Male,Divorced,Post Graduate,1971,51,Employed,5432109876,7777777777777777,2029,Tablet,920000,6000,Transfer,Kolkata,Visa,Online,880000,10560000,4000,60,12,False,True,0.2,20,True,15,20,1
+92,Fixed,Female,Married,High School,1988,34,Unemployed,4321098765,8888888888888888,2028,Desktop,930000,7500,Purchase,Hyderabad,MasterCard,Offline,890000,10680000,5000,70,16,True,False,0.1,10,False,20,25,0
+93,Variable,Male,Married,Graduate,1974,48,Self-Employed,3210987654,9999999999999999,2029,Mobile,940000,5500,Withdrawal,Chennai,Visa,Online,900000,10800000,3000,50,8,True,True,0.9,90,True,25,30,1
+94,Fixed,Other,Married,Graduate,1972,50,Employed,2109876543,1111111111111111,2028,Tablet,950000,3000,Transfer,Delhi,MasterCard,Offline,910000,10920000,4000,60,12,False,False,0.8,80,False,10,15,0
+95,Fixed,Male,Single,Doctorate,1977,45,Employed,0987654321,2222222222222222,2029,Desktop,960000,6000,Purchase,Mumbai,Visa,Online,920000,11040000,5000,70,16,True,True,0.7,70,True,15,20,1
+96,Variable,Female,Single,High School,1973,49,Unemployed,9876543210,3333333333333333,2029,Mobile,970000,7500,Withdrawal,Kolkata,MasterCard,Offline,930000,11160000,4000,50,20,False,True,0.6,60,False,20,25,0
+97,Fixed,Other,Single,Graduate,1968,54,Employed,8765432109,4444444444444444,2028,Tablet,980000,5500,Transfer,Hyderabad,Visa,Online,940000,11280000,3000,70,8,False,False,0.5,50,True,25,30,1
+98,Fixed,Female,Married,High School,1983,39,Employed,7654321098,5555555555555555,2029,Desktop,990000,3000,Purchase,Chennai,MasterCard,Offline,950000,11400000,4000,60,12,True,True,0.4,40,True,10,15,0
+99,Variable,Male,Married,Graduate,1979,43,Unemployed,6543210987,6666666666666666,2029,Mobile,1000000,6000,Withdrawal,Delhi,Visa,Online,960000,11520000,5000,70,16,True,False,0.3,30,False,15,20,1
+100,Fixed,Other,Married,Graduate,1974,48,Self-Employed,5432109876,7777777777777777,2029,Tablet,1010000,7500,Transfer,Mumbai,MasterCard,Offline,970000,11640000,4000,50,20,True,True,0.2,20,True,20,25,0
+101,Fixed,Female,Single,High School,1979,43,Employed,6543210987,8888888888888888,2024,Desktop,200000,5500,Purchase,Mumbai,Visa,Online,120000,1440000,3000,40,5,False,True,0.9,10,False,10,15,0
+102,Variable,Male,Married,Post Graduate,1985,37,Unemployed,5432109876,9999999999999999,2025,Mobile,250000,6000,Withdrawal,Delhi,MasterCard,Offline,130000,1560000,5000,70,20,True,False,0.8,20,True,20,25,1
+103,Fixed,Other,Single,Doctorate,1983,39,Self-Employed,4321098765,1111111111111111,2023,Tablet,300000,3000,Transfer,Kolkata,Visa,Online,140000,1680000,4000,50,15,True,False,0.7,30,True,25,30,0
+104,Fixed,Female,Married,Graduate,1980,42,Employed,3210987654,2222222222222222,2026,Desktop,350000,7500,Purchase,Chennai,MasterCard,Offline,150000,1800000,3000,60,10,False,True,0.6,40,False,10,15,1
+105,Variable,Male,Single,High School,1972,50,Unemployed,2109876543,3333333333333333,2027,Mobile,400000,5500,Withdrawal,Bangalore,Visa,Online,160000,1920000,5000,70,5,False,False,0.5,50,True,20,25,0
+106,Fixed,Other,Married,Graduate,1989,33,Employed,1098765432,4444444444444444,2028,Tablet,450000,6000,Transfer,Hyderabad,MasterCard,Offline,170000,2040000,4000,40,20,True,True,0.4,60,True,25,30,1
+107,Fixed,Female,Married,Post Graduate,1986,36,Self-Employed,9876543210,5555555555555555,2029,Desktop,500000,3000,Purchase,Delhi,Visa,Online,180000,2160000,3000,50,15,True,False,0.3,70,False,10,15,0
+108,Variable,Male,Divorced,High School,1984,38,Employed,8765432109,6666666666666666,2024,Mobile,550000,7500,Withdrawal,Mumbai,MasterCard,Offline,190000,2280000,5000,60,10,True,True,0.2,80,True,20,25,1
+109,Fixed,Other,Single,Graduate,1978,44,Unemployed,7654321098,7777777777777777,2025,Tablet,600000,5500,Transfer,Kolkata,Visa,Online,200000,2400000,4000,70,5,False,False,0.1,90,False,25,30,0
+110,Fixed,Female,Married,Doctorate,1975,47,Employed,6543210987,8888888888888888,2026,Desktop,650000,3000,Purchase,Hyderabad,MasterCard,Offline,210000,2520000,3000,40,20,True,True,0.9,100,True,10,15,1
+111,Variable,Male,Married,Post Graduate,1980,42,Self-Employed,5432109876,9999999999999999,2027,Mobile,700000,6000,Withdrawal,Chennai,Visa,Online,220000,2640000,5000,50,15,True,False,0.8,10,False,20,25,0
+112,Fixed,Other,Single,High School,1987,35,Employed,4321098765,1111111111111111,2028,Tablet,750000,7500,Transfer,Delhi,MasterCard,Offline,230000,2760000,4000,60,10,True,True,0.7,20,True,25,30,1
+113,Fixed,Female,Married,Graduate,1976,46,Unemployed,3210987654,2222222222222222,2029,Desktop,800000,3000,Purchase,Mumbai,Visa,Online,240000,2880000,3000,70,5,False,False,0.6,30,False,10,15,0
+114,Variable,Male,Single,Post Graduate,1974,48,Employed,2109876543,3333333333333333,2024,Mobile,850000,5500,Withdrawal,Kolkata,MasterCard,Offline,250000,3000000,5000,40,20,False,True,0.5,40,True,20,25,1
+115,Fixed,Other,Married,High School,1982,40,Employed,1098765432,4444444444444444,2025,Tablet,900000,6000,Transfer,Hyderabad,Visa,Online,260000,3120000,4000,50,15,True,False,0.4,50,True,25,30,0
+116,Fixed,Female,Married,Graduate,1979,43,Self-Employed,0987654321,5555555555555555,2026,Desktop,950000,7500,Purchase,Delhi,MasterCard,Offline,270000,3240000,3000,60,10,True,True,0.3,60,False,10,15,1
+117,Variable,Male,Single,Doctorate,1977,45,Unemployed,9876543210,6666666666666666,2027,Mobile,1000000,3000,Withdrawal,Mumbai,Visa,Online,280000,3360000,5000,70,5,False,True,0.2,70,True,20,25,0
+118,Fixed,Other,Married,High School,1973,49,Employed,8765432109,7777777777777777,2028,Tablet,1050000,5500,Transfer,Kolkata,MasterCard,Offline,290000,3480000,4000,40,20,True,False,0.1,80,True,25,30,1
+119,Fixed,Female,Married,Post Graduate,1988,34,Employed,7654321098,8888888888888888,2029,Desktop,1100000,6000,Purchase,Hyderabad,Visa,Online,300000,3600000,3000,50,15,False,True,0.9,90,False,10,15,0
+120,Variable,Male,Single,Graduate,1972,50,Self-Employed,6543210987,9999999999999999,2024,Mobile,1150000,7500,Withdrawal,Chennai,MasterCard,Offline,310000,3720000,5000,60,10,True,False,0.8,100,True,20,25,1
+121,Fixed,Other,Married,High School,1981,41,Unemployed,5432109876,1111111111111111,2025,Tablet,1200000,3000,Transfer,Delhi,Visa,Online,320000,3840000,4000,70,5,True,True,0.7,10,False,25,30,0
+122,Fixed,Female,Married,Graduate,1976,46,Employed,4321098765,2222222222222222,2026,Desktop,1250000,5500,Purchase,Mumbai,MasterCard,Offline,330000,3960000,3000,40,20,False,False,0.6,20,True,10,15,1
+123,Variable,Male,Single,High School,1974,48,Employed,3210987654,3333333333333333,2027,Mobile,1300000,7500,Withdrawal,Kolkata,Visa,Online,340000,4080000,5000,50,15,True,True,0.5,30,True,20,25,0
+124,Fixed,Other,Married,Post Graduate,1989,33,Unemployed,2109876543,4444444444444444,2028,Tablet,1350000,3000,Transfer,Hyderabad,MasterCard,Offline,350000,4200000,4000,60,10,True,False,0.4,40,False,25,30,1
+125,Fixed,Female,Married,Doctorate,1977,45,Employed,1098765432,5555555555555555,2029,Desktop,1400000,6000,Purchase,Delhi,Visa,Online,360000,4320000,3000,70,5,True,True,0.3,50,True,10,15,0
+126,Variable,Male,Single,Graduate,1973,49,Self-Employed,0987654321,6666666666666666,2024,Mobile,1450000,5500,Withdrawal,Mumbai,MasterCard,Offline,370000,4440000,5000,40,20,False,False,0.2,60,False,20,25,1
+127,Fixed,Other,Married,High School,1984,38,Employed,9876543210,7777777777777777,2025,Tablet,1500000,7500,Transfer,Kolkata,Visa,Online,380000,4560000,4000,50,15,False,True,0.1,70,True,25,30,0
+128,Fixed,Female,Married,Graduate,1978,44,Unemployed,8765432109,8888888888888888,2026,Desktop,1550000,3000,Purchase,Hyderabad,MasterCard,Offline,390000,4680000,3000,60,10,False,False,0.9,80,False,10,15,1
+129,Variable,Male,Single,Post Graduate,1980,42,Employed,7654321098,9999999999999999,2027,Mobile,1600000,5500,Withdrawal,Delhi,Visa,Online,400000,4800000,5000,70,5,True,True,0.8,90,True,20,25,0
+130,Fixed,Other,Married,High School,1976,46,Self-Employed,6543210987,1111111111111111,2028,Tablet,1650000,7500,Transfer,Mumbai,MasterCard,Offline,410000,4920000,4000,40,20,True,False,0.7,100,True,25,30,1
+131,Fixed,Female,Married,Graduate,1974,48,Employed,5432109876,2222222222222222,2029,Desktop,1700000,3000,Purchase,Kolkata,Visa,Online,420000,5040000,3000,50,15,True,True,0.6,10,False,10,15,0
+132,Variable,Male,Single,Doctorate,1983,39,Unemployed,4321098765,3333333333333333,2024,Mobile,1750000,5500,Withdrawal,Hyderabad,MasterCard,Offline,430000,5160000,5000,60,10,False,False,0.5,20,True,20,25,1
+133,Fixed,Other,Married,Graduate,1987,35,Employed,3210987654,4444444444444444,2025,Tablet,1800000,7500,Transfer,Delhi,Visa,Online,440000,5280000,4000,70,5,True,True,0.4,30,True,25,30,0
+134,Fixed,Female,Married,High School,1982,40,Self-Employed,2109876543,5555555555555555,2026,Desktop,1850000,3000,Purchase,Mumbai,MasterCard,Offline,450000,5400000,3000,40,20,True,False,0.3,40,False,10,15,1
+135,Variable,Male,Single,Graduate,1981,41,Employed,1098765432,6666666666666666,2027,Mobile,1900000,5500,Withdrawal,Kolkata,Visa,Online,460000,5520000,5000,50,15,False,True,0.2,50,True,20,25,0
+136,Fixed,Other,Married,Post Graduate,1977,45,Unemployed,0987654321,7777777777777777,2028,Tablet,1950000,7500,Transfer,Hyderabad,MasterCard,Offline,470000,5640000,4000,60,10,False,True,0.1,60,True,25,30,1
+137,Fixed,Female,Married,Graduate,1973,49,Employed,9876543210,8888888888888888,2029,Desktop,2000000,3000,Purchase,Delhi,Visa,Online,480000,5760000,3000,70,5,True,False,0.9,70,False,10,15,0
+138,Variable,Male,Single,High School,1984,38,Self-Employed,8765432109,9999999999999999,2024,Mobile,2050000,5500,Withdrawal,Mumbai,MasterCard,Offline,490000,5880000,5000,40,20,True,True,0.8,80,True,20,25,1
+139,Fixed,Other,Married,Graduate,1988,34,Employed,7654321098,1111111111111111,2025,Tablet,2100000,7500,Transfer,Kolkata,Visa,Online,500000,6000000,4000,50,15,False,False,0.7,90,True,25,30,0
+140,Fixed,Female,Married,High School,1979,43,Unemployed,6543210987,2222222222222222,2026,Desktop,2150000,3000,Purchase,Hyderabad,MasterCard,Offline,510000,6120000,3000,60,10,True,True,0.6,100,False,10,15,1
+141,Variable,Male,Single,Post Graduate,1983,39,Employed,5432109876,3333333333333333,2027,Mobile,2200000,5500,Withdrawal,Delhi,Visa,Online,520000,6240000,5000,70,5,True,False,0.5,10,True,20,25,0
+142,Fixed,Other,Married,Graduate,1976,46,Self-Employed,4321098765,4444444444444444,2028,Tablet,2250000,7500,Transfer,Mumbai,MasterCard,Offline,530000,6360000,4000,40,20,True,True,0.4,20,True,25,30,1
+143,Fixed,Female,Married,High School,1974,48,Employed,3210987654,5555555555555555,2029,Desktop,2300000,3000,Purchase,Kolkata,Visa,Online,540000,6480000,3000,50,15,False,False,0.3,30,False,10,15,0
+144,Variable,Male,Single,Doctorate,1982,40,Unemployed,2109876543,6666666666666666,2024,Mobile,2350000,5500,Withdrawal,Hyderabad,MasterCard,Offline,550000,6600000,5000,60,10,True,True,0.2,40,True,20,25,1
+145,Fixed,Other,Married,High School,1977,45,Employed,1098765432,7777777777777777,2025,Tablet,2400000,7500,Transfer,Delhi,Visa,Online,560000,6720000,4000,70,5,True,False,0.1,50,True,25,30,0
+146,Fixed,Female,Married,Graduate,1973,49,Unemployed,0987654321,8888888888888888,2026,Desktop,2450000,3000,Purchase,Mumbai,MasterCard,Offline,570000,6840000,3000,40,20,True,True,0.9,60,False,10,15,1
+147,Variable,Male,Single,Post Graduate,1988,34,Employed,9876543210,9999999999999999,2027,Mobile,2500000,5500,Withdrawal,Kolkata,Visa,Online,580000,6960000,5000,50,15,True,False,0.8,70,True,20,25,0
+148,Fixed,Other,Married,High School,1981,41,Self-Employed,8765432109,1111111111111111,2028,Tablet,2550000,7500,Transfer,Hyderabad,MasterCard,Offline,590000,7080000,4000,60,10,True,True,0.7,80,True,25,30,1
+149,Fixed,Female,Married,Graduate,1979,43,Employed,7654321098,2222222222222222,2029,Desktop,2600000,3000,Purchase,Delhi,Visa,Online,600000,7200000,3000,70,5,False,False,0.6,90,False,10,15,0
+150,Variable,Male,Single,High School,1984,38,Unemployed,6543210987,3333333333333333,2024,Mobile,2650000,5500,Withdrawal,Mumbai,MasterCard,Offline,610000,7320000,5000,40,20,False,True,0.5,100,True,20,25,1
+151,Fixed,Other,Married,Graduate,1976,46,Employed,5432109876,4444444444444444,2025,Tablet,2700000,7500,Transfer,Kolkata,Visa,Online,620000,7440000,4000,50,15,True,False,0.4,10,True,25,30,0
+152,Fixed,Female,Married,High School,1974,48,Self-Employed,4321098765,5555555555555555,2026,Desktop,2750000,3000,Purchase,Hyderabad,MasterCard,Offline,630000,7560000,3000,60,10,True,True,0.3,20,False,10,15,1
+153,Variable,Male,Single,Post Graduate,1982,40,Employed,3210987654,6666666666666666,2027,Mobile,2800000,5500,Withdrawal,Delhi,Visa,Online,640000,7680000,5000,70,5,True,False,0.2,30,True,20,25,0
+154,Fixed,Other,Married,Graduate,1977,45,Unemployed,2109876543,7777777777777777,2028,Tablet,2850000,7500,Transfer,Mumbai,MasterCard,Offline,650000,7800000,4000,40,20,True,True,0.1,40,True,25,30,1
+155,Fixed,Female,Married,High School,1973,49,Employed,1098765432,8888888888888888,2029,Desktop,2900000,3000,Purchase,Kolkata,Visa,Online,660000,7920000,3000,50,15,False,False,0.9,50,False,10,15,0
+156,Variable,Male,Single,Post Graduate,1988,34,Self-Employed,0987654321,9999999999999999,2024,Mobile,2950000,5500,Withdrawal,Hyderabad,MasterCard,Offline,670000,8040000,5000,60,10,False,True,0.8,60,True,20,25,1
+157,Fixed,Other,Married,Graduate,1981,41,Employed,9876543210,1111111111111111,2025,Tablet,3000000,7500,Transfer,Delhi,Visa,Online,680000,8160000,4000,70,5,True,False,0.7,70,True,25,30,0
+158,Fixed,Female,Married,High School,1979,43,Unemployed,8765432109,2222222222222222,2026,Desktop,3050000,3000,Purchase,Mumbai,MasterCard,Offline,690000,8280000,3000,40,20,True,True,0.6,80,False,10,15,1
+159,Variable,Male,Single,Post Graduate,1984,38,Employed,7654321098,3333333333333333,2027,Mobile,3100000,5500,Withdrawal,Kolkata,Visa,Online,700000,8400000,5000,50,15,True,True,0.5,90,True,20,25,0
+160,Fixed,Other,Married,Graduate,1976,46,Self-Employed,6543210987,4444444444444444,2028,Tablet,3150000,7500,Transfer,Hyderabad,MasterCard,Offline,710000,8520000,4000,60,10,True,False,0.4,100,True,25,30,1
+161,Fixed,Female,Married,High School,1974,48,Employed,5432109876,5555555555555555,2029,Desktop,3200000,3000,Purchase,Delhi,Visa,Online,720000,8640000,3000,70,5,False,False,0.3,10,False,10,15,0
+162,Variable,Male,Single,Post Graduate,1982,40,Unemployed,4321098765,6666666666666666,2024,Mobile,3250000,5500,Withdrawal,Mumbai,MasterCard,Offline,730000,8760000,5000,40,20,False,True,0.2,20,True,20,25,1
+163,Fixed,Other,Married,Graduate,1977,45,Employed,3210987654,7777777777777777,2025,Tablet,3300000,7500,Transfer,Kolkata,Visa,Online,740000,8880000,4000,50,15,True,False,0.1,30,True,25,30,0
+164,Fixed,Female,Married,High School,1973,49,Self-Employed,2109876543,8888888888888888,2026,Desktop,3350000,3000,Purchase,Hyderabad,MasterCard,Offline,750000,9000000,3000,60,10,True,True,0.9,40,False,10,15,1
+165,Variable,Male,Single,Post Graduate,1988,34,Employed,1098765432,9999999999999999,2027,Mobile,3400000,5500,Withdrawal,Delhi,Visa,Online,760000,9120000,5000,70,5,True,False,0.8,50,True,20,25,0
+166,Fixed,Other,Married,Graduate,1981,41,Unemployed,0987654321,1111111111111111,2028,Tablet,3450000,7500,Transfer,Mumbai,MasterCard,Offline,770000,9240000,4000,40,20,True,True,0.7,60,True,25,30,1
+167,Fixed,Female,Married,High School,1979,43,Employed,9876543210,2222222222222222,2029,Desktop,3500000,3000,Purchase,Kolkata,Visa,Online,780000,9360000,3000,50,15,False,False,0.6,70,False,10,15,0
+168,Variable,Male,Single,Post Graduate,1984,38,Employed,8765432109,3333333333333333,2024,Mobile,3550000,5500,Withdrawal,Hyderabad,MasterCard,Offline,790000,9480000,5000,60,10,False,True,0.5,80,True,20,25,1
+169,Fixed,Other,Married,Graduate,1976,46,Self-Employed,7654321098,4444444444444444,2025,Tablet,3600000,7500,Transfer,Delhi,Visa,Online,800000,9600000,4000,70,5,True,False,0.4,90,True,25,30,0
+170,Fixed,Female,Married,High School,1974,48,Employed,6543210987,5555555555555555,2026,Desktop,3650000,3000,Purchase,Mumbai,MasterCard,Offline,810000,9720000,3000,40,20,True,True,0.3,100,False,10,15,1
+171,Variable,Male,Single,Post Graduate,1982,40,Unemployed,5432109876,6666666666666666,2027,Mobile,3700000,5500,Withdrawal,Kolkata,Visa,Online,820000,9840000,5000,50,15,True,False,0.2,10,True,20,25,0
+172,Fixed,Other,Married,Graduate,1977,45,Employed,4321098765,7777777777777777,2028,Tablet,3750000,7500,Transfer,Hyderabad,MasterCard,Offline,830000,9960000,4000,60,10,True,True,0.1,20,True,25,30,1
+173,Fixed,Female,Married,High School,1973,49,Self-Employed,3210987654,8888888888888888,2029,Desktop,3800000,3000,Purchase,Delhi,Visa,Online,840000,10080000,3000,70,5,False,False,0.9,30,False,10,15,0
+174,Variable,Male,Single,Post Graduate,1988,34,Employed,2109876543,9999999999999999,2024,Mobile,3850000,5500,Withdrawal,Mumbai,MasterCard,Offline,850000,10200000,5000,40,20,False,True,0.8,40,True,20,25,1
+175,Fixed,Other,Married,Graduate,1981,41,Unemployed,1098765432,1111111111111111,2025,Tablet,3900000,7500,Transfer,Kolkata,Visa,Online,860000,10320000,4000,50,15,True,False,0.7,50,True,25,30,0
+176,Fixed,Female,Married,High School,1979,43,Employed,0987654321,2222222222222222,2026,Desktop,3950000,3000,Purchase,Hyderabad,MasterCard,Offline,870000,10440000,3000,60,10,True,True,0.6,60,False,10,15,1
+177,Variable,Male,Single,Post Graduate,1984,38,Employed,9876543210,3333333333333333,2027,Mobile,4000000,5500,Withdrawal,Delhi,Visa,Online,880000,10560000,5000,70,5,True,False,0.5,70,True,20,25,0
+178,Fixed,Other,Married,Graduate,1976,46,Self-Employed,8765432109,4444444444444444,2028,Tablet,4050000,7500,Transfer,Mumbai,MasterCard,Offline,890000,10680000,4000,40,20,True,True,0.4,80,True,25,30,1
+179,Fixed,Female,Married,High School,1974,48,Employed,7654321098,5555555555555555,2029,Desktop,4100000,3000,Purchase,Kolkata,Visa,Online,900000,10800000,3000,50,15,False,False,0.3,90,False,10,15,0
+180,Variable,Male,Single,Post Graduate,1982,40,Unemployed,6543210987,6666666666666666,2024,Mobile,4150000,5500,Withdrawal,Hyderabad,MasterCard,Offline,910000,10920000,5000,60,10,False,True,0.2,100,True,20,25,1
+181,Fixed,Other,Married,Graduate,1977,45,Employed,5432109876,7777777777777777,2025,Tablet,4200000,7500,Transfer,Delhi,Visa,Online,920000,11040000,4000,70,5,True,False,0.1,10,True,25,30,0
+182,Fixed,Female,Married,High School,1973,49,Self-Employed,4321098765,8888888888888888,2026,Desktop,4250000,3000,Purchase,Mumbai,MasterCard,Offline,930000,11160000,3000,40,20,True,True,0.9,20,False,10,15,1
+183,Variable,Male,Single,Post Graduate,1988,34,Employed,3210987654,9999999999999999,2027,Mobile,4300000,5500,Withdrawal,Kolkata,Visa,Online,940000,11280000,5000,50,15,True,False,0.8,30,True,20,25,0
+184,Fixed,Other,Married,Graduate,1981,41,Unemployed,2109876543,1111111111111111,2028,Tablet,4350000,7500,Transfer,Hyderabad,MasterCard,Offline,950000,11400000,4000,60,10,True,True,0.7,40,True,25,30,1
+185,Fixed,Female,Married,High School,1979,43,Employed,1098765432,2222222222222222,2029,Desktop,4400000,3000,Purchase,Delhi,Visa,Online,960000,11520000,3000,70,5,False,False,0.6,50,False,10,15,0
+186,Variable,Male,Single,Post Graduate,1984,38,Employed,0987654321,3333333333333333,2024,Mobile,4450000,5500,Withdrawal,Mumbai,MasterCard,Offline,970000,11640000,5000,40,20,False,True,0.5,60,True,20,25,1
+187,Fixed,Other,Married,Graduate,1976,46,Self-Employed,9876543210,4444444444444444,2025,Tablet,4500000,7500,Transfer,Kolkata,Visa,Online,980000,11760000,4000,50,15,True,False,0.4,70,True,25,30,0
+188,Fixed,Female,Married,High School,1974,48,Employed,8765432109,5555555555555555,2026,Desktop,4550000,3000,Purchase,Hyderabad,MasterCard,Offline,990000,11880000,3000,60,10,True,True,0.3,80,False,10,15,1
+189,Variable,Male,Single,Post Graduate,1982,40,Unemployed,7654321098,6666666666666666,2027,Mobile,4600000,5500,Withdrawal,Delhi,Visa,Online,1000000,12000000,5000,70,5,True,False,0.2,90,True,20,25,0
+190,Fixed,Other,Married,Graduate,1977,45,Employed,6543210987,7777777777777777,2028,Tablet,4650000,7500,Transfer,Mumbai,MasterCard,Offline,1010000,12120000,4000,40,20,True,True,0.1,100,True,25,30,1
+191,Fixed,Female,Married,High School,1973,49,Self-Employed,5432109876,8888888888888888,2029,Desktop,4700000,3000,Purchase,Kolkata,Visa,Online,1020000,12240000,3000,50,15,False,False,0.9,10,False,10,15,0
+192,Variable,Male,Single,Post Graduate,1988,34,Employed,4321098765,9999999999999999,2024,Mobile,4750000,5500,Withdrawal,Hyderabad,MasterCard,Offline,1030000,12360000,5000,60,10,False,True,0.8,20,True,20,25,1
+193,Fixed,Other,Married,Graduate,1981,41,Unemployed,3210987654,1111111111111111,2025,Tablet,4800000,7500,Transfer,Delhi,Visa,Online,1040000,12480000,4000,70,5,True,False,0.7,30,True,25,30,0
+194,Fixed,Female,Married,High School,1979,43,Employed,2109876543,2222222222222222,2026,Desktop,4850000,3000,Purchase,Mumbai,MasterCard,Offline,1050000,12600000,3000,40,20,True,False,0.6,40,False,10,15,1
+195,Variable,Male,Single,Post Graduate,1984,38,Employed,1098765432,3333333333333333,2027,Mobile,4900000,5500,Withdrawal,Kolkata,Visa,Online,1060000,12720000,5000,50,15,True,True,0.5,50,True,20,25,0
+196,Fixed,Other,Married,Graduate,1976,46,Self-Employed,0987654321,4444444444444444,2028,Tablet,4950000,7500,Transfer,Hyderabad,MasterCard,Offline,1070000,12840000,4000,60,10,True,False,0.4,60,True,25,30,1
+197,Fixed,Female,Married,High School,1974,48,Employed,9876543210,5555555555555555,2029,Desktop,5000000,3000,Purchase,Delhi,Visa,Online,1080000,12960000,3000,70,5,False,False,0.3,70,False,10,15,0
+198,Variable,Male,Single,Post Graduate,1982,40,Unemployed,8765432109,6666666666666666,2024,Mobile,5050000,5500,Withdrawal,Mumbai,MasterCard,Offline,1090000,13080000,5000,40,20,False,True,0.2,80,True,20,25,1
+199,Fixed,Other,Married,Graduate,1977,45,Employed,7654321098,7777777777777777,2025,Tablet,5100000,7500,Transfer,Kolkata,Visa,Online,1100000,13200000,4000,50,15,True,False,0.1,90,True,25,30,0
+200,Fixed,Female,Married,HighSchool,1973,49,SelfEmployed,6543210987,8888888888888888,2026,Desktop,5150000,3000,Purchase,Hyderabad,MasterCard,Offline,1110000,13320000,3000,60,10,True,True,0.9,100,False,10,15,1
+201,Variable,Other,Single,Graduate,1988,34,Unemployed,9876543210,1111111111111111,2027,Mobile,320000,2500,Withdrawal,Delhi,Visa,Online,85000,1020000,2000,30,18,True,False,0.8,90,True,20,25,0
+202,Fixed,Male,Single,High School,1975,47,Employed,1234567890,3333333333333333,2028,Desktop,450000,5500,Purchase,Pune,MasterCard,Offline,120000,1440000,7000,70,6,False,True,0.7,100,False,5,10,1
+203,Fixed,Female,Single,Post Graduate,1982,40,Self-Employed,9876543210,7777777777777777,2023,Tablet,150000,4000,Transfer,Mumbai,Visa,Online,95000,1140000,5000,80,20,False,False,0.6,20,False,5,20,0
+204,Variable,Other,Single,High School,1980,42,Employed,6543210987,6666666666666666,2024,Mobile,220000,6500,Withdrawal,Bangalore,MasterCard,Offline,115000,1380000,4000,10,8,True,False,0.5,90,False,30,10,1
+205,Fixed,Male,Married,Graduate,1976,46,Employed,1234567890,2222222222222222,2025,Desktop,250000,3000,Transfer,Mumbai,Visa,Online,95000,1140000,7000,60,16,False,True,0.4,100,True,20,25,0
+206,Fixed,Female,Single,Doctorate,1985,37,Self-Employed,9876543210,8888888888888888,2026,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,120000,1440000,4000,30,10,False,True,0.3,20,False,5,30,1
+207,Variable,Male,Single,Graduate,1982,40,Unemployed,6543210987,1111111111111111,2027,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,3000,70,6,False,False,0.2,90,True,30,10,0
+208,Fixed,Female,Single,Post Graduate,1970,52,Employed,1234567890,2222222222222222,2028,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+209,Fixed,Other,Single,High School,1969,53,Self-Employed,9876543210,3333333333333333,2029,Tablet,140000,2500,Purchase,Hyderabad,Visa,Offline,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+210,Variable,Female,Married,Doctorate,1975,47,Employed,6543210987,7777777777777777,2023,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Online,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+211,Fixed,Male,Married,Graduate,1973,49,Employed,1234567890,2222222222222222,2024,Desktop,250000,5500,Transfer,Mumbai,Visa,Offline,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+212,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,5555555555555555,2025,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+213,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,1111111111111111,2026,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+214,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,2222222222222222,2027,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+215,Fixed,Other,Single,High School,1970,52,Self-Employed,1234567890,3333333333333333,2028,Tablet,140000,2500,Purchase,Hyderabad,Visa,Online,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+216,Variable,Female,Married,Doctorate,1969,53,Employed,6543210987,4444444444444444,2029,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Offline,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+217,Fixed,Male,Married,Graduate,1975,47,Employed,1234567890,5555555555555555,2023,Desktop,250000,5500,Transfer,Mumbai,Visa,Online,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+218,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,6666666666666666,2024,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+219,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,7777777777777777,2025,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+220,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,8888888888888888,2026,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+221,Fixed,Other,Single,High School,1970,52,Self-Employed,1234567890,9999999999999999,2027,Tablet,140000,2500,Purchase,Hyderabad,Visa,Online,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+222,Variable,Female,Married,Doctorate,1969,53,Employed,6543210987,0000000000000000,2028,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Offline,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+223,Fixed,Male,Married,Graduate,1975,47,Employed,1234567890,1111111111111111,2029,Desktop,250000,5500,Transfer,Mumbai,Visa,Online,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+224,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,2222222222222222,2023,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+225,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,3333333333333333,2024,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+226,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,4444444444444444,2025,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+227,Fixed,Other,Single,High School,1970,52,Self-Employed,1234567890,5555555555555555,2026,Tablet,140000,2500,Purchase,Hyderabad,Visa,Online,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+228,Variable,Female,Married,Doctorate,1969,53,Employed,6543210987,6666666666666666,2027,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Offline,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+229,Fixed,Male,Married,Graduate,1975,47,Employed,1234567890,7777777777777777,2028,Desktop,250000,5500,Transfer,Mumbai,Visa,Online,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+230,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,8888888888888888,2029,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+231,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,9999999999999999,2023,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+232,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,0000000000000000,2024,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+233,Fixed,Other,Single,High School,1970,52,Self-Employed,1234567890,1111111111111111,2025,Tablet,140000,2500,Purchase,Hyderabad,Visa,Online,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+234,Variable,Female,Married,Doctorate,1969,53,Employed,6543210987,2222222222222222,2026,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Offline,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+235,Fixed,Male,Married,Graduate,1975,47,Employed,1234567890,3333333333333333,2027,Desktop,250000,5500,Transfer,Mumbai,Visa,Online,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+236,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,4444444444444444,2028,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+237,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,5555555555555555,2029,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+238,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,6666666666666666,2023,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+239,Fixed,Other,Single,High School,1970,52,Self-Employed,1234567890,7777777777777777,2024,Tablet,140000,2500,Purchase,Hyderabad,Visa,Online,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+240,Variable,Female,Married,Doctorate,1969,53,Employed,6543210987,8888888888888888,2025,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Offline,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+241,Fixed,Male,Married,Graduate,1975,47,Employed,1234567890,9999999999999999,2026,Desktop,250000,5500,Transfer,Mumbai,Visa,Online,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+242,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,0000000000000000,2027,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+243,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,1111111111111111,2028,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+244,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,2222222222222222,2029,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+245,Fixed,Other,Single,High School,1970,52,Self-Employed,1234567890,3333333333333333,2023,Tablet,140000,2500,Purchase,Hyderabad,Visa,Online,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+246,Variable,Female,Married,Doctorate,1969,53,Employed,6543210987,4444444444444444,2024,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Offline,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+247,Fixed,Male,Married,Graduate,1975,47,Employed,1234567890,5555555555555555,2025,Desktop,250000,5500,Transfer,Mumbai,Visa,Online,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+248,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,6666666666666666,2026,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+249,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,7777777777777777,2027,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+250,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,8888888888888888,2028,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+251,Fixed,Other,Single,High School,1970,52,Self-Employed,1234567890,9999999999999999,2029,Tablet,140000,2500,Purchase,Hyderabad,Visa,Online,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+252,Variable,Female,Married,Doctorate,1969,53,Employed,6543210987,0000000000000000,2023,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Offline,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+253,Fixed,Male,Married,Graduate,1975,47,Employed,1234567890,1111111111111111,2024,Desktop,250000,5500,Transfer,Mumbai,Visa,Online,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+254,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,2222222222222222,2025,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+255,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,3333333333333333,2026,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+256,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,4444444444444444,2027,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+257,Fixed,Other,Single,High School,1970,52,Self-Employed,1234567890,5555555555555555,2028,Tablet,140000,2500,Purchase,Hyderabad,Visa,Online,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+258,Variable,Female,Married,Doctorate,1969,53,Employed,6543210987,6666666666666666,2029,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Offline,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+259,Fixed,Male,Married,Graduate,1975,47,Employed,1234567890,7777777777777777,2023,Desktop,250000,5500,Transfer,Mumbai,Visa,Online,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+260,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,8888888888888888,2024,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+261,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,9999999999999999,2025,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+262,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,0000000000000000,2026,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+263,Fixed,Other,Single,High School,1970,52,Self-Employed,1234567890,1111111111111111,2027,Tablet,140000,2500,Purchase,Hyderabad,Visa,Online,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+264,Variable,Female,Married,Doctorate,1969,53,Employed,6543210987,2222222222222222,2028,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Offline,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+265,Fixed,Male,Married,Graduate,1975,47,Employed,1234567890,3333333333333333,2029,Desktop,250000,5500,Transfer,Mumbai,Visa,Online,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+266,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,4444444444444444,2023,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+267,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,5555555555555555,2024,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+268,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,6666666666666666,2025,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+269,Fixed,Other,Single,High School,1970,52,Self-Employed,1234567890,7777777777777777,2026,Tablet,140000,2500,Purchase,Hyderabad,Visa,Online,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+270,Variable,Female,Married,Doctorate,1969,53,Employed,6543210987,8888888888888888,2027,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Offline,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+271,Fixed,Male,Married,Graduate,1975,47,Employed,1234567890,9999999999999999,2028,Desktop,250000,5500,Transfer,Mumbai,Visa,Online,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+272,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,0000000000000000,2029,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+273,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,1111111111111111,2023,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+274,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,2222222222222222,2024,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+275,Fixed,Other,Single,High School,1970,52,Self-Employed,1234567890,3333333333333333,2025,Tablet,140000,2500,Purchase,Hyderabad,Visa,Online,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+276,Variable,Female,Married,Doctorate,1969,53,Employed,6543210987,4444444444444444,2026,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Offline,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+277,Fixed,Male,Married,Graduate,1975,47,Employed,1234567890,5555555555555555,2027,Desktop,250000,5500,Transfer,Mumbai,Visa,Online,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+278,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,6666666666666666,2028,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+279,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,7777777777777777,2029,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+280,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,8888888888888888,2023,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+281,Fixed,Other,Single,High School,1970,52,Self-Employed,1234567890,9999999999999999,2024,Tablet,140000,2500,Purchase,Hyderabad,Visa,Online,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+282,Variable,Female,Married,Doctorate,1969,53,Employed,6543210987,0000000000000000,2025,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Offline,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+283,Fixed,Male,Married,Graduate,1975,47,Employed,1234567890,1111111111111111,2026,Desktop,250000,5500,Transfer,Mumbai,Visa,Online,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+284,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,2222222222222222,2027,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+285,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,3333333333333333,2028,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+286,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,4444444444444444,2029,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+287,Fixed,Other,Single,High School,1970,52,Self-Employed,1234567890,5555555555555555,2023,Tablet,140000,2500,Purchase,Hyderabad,Visa,Online,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+288,Variable,Female,Married,Doctorate,1969,53,Employed,6543210987,6666666666666666,2024,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Offline,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+289,Fixed,Male,Married,Graduate,1975,47,Employed,1234567890,7777777777777777,2025,Desktop,250000,5500,Transfer,Mumbai,Visa,Online,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+290,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,8888888888888888,2026,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+291,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,9999999999999999,2027,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+292,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,0000000000000000,2028,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+293,Fixed,Other,Single,High School,1970,52,Self-Employed,1234567890,1111111111111111,2029,Tablet,140000,2500,Purchase,Hyderabad,Visa,Online,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+294,Variable,Female,Married,Doctorate,1969,53,Employed,6543210987,2222222222222222,2023,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Offline,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+295,Fixed,Male,Married,Graduate,1975,47,Employed,1234567890,3333333333333333,2024,Desktop,250000,5500,Transfer,Mumbai,Visa,Online,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+296,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,4444444444444444,2025,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+297,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,5555555555555555,2026,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+298,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,6666666666666666,2027,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+299,Fixed,Other,Single,High School,1970,52,Self-Employed,1234567890,7777777777777777,2028,Tablet,140000,2500,Purchase,Hyderabad,Visa,Online,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+300,Variable,Female,Married,Doctorate,1969,53,Employed,6543210987,8888888888888888,2029,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Offline,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+301,Fixed,Male,Married,Graduate,1975,47,Employed,1234567890,9999999999999999,2024,Desktop,250000,5500,Transfer,Mumbai,Visa,Online,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+302,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,0000000000000000,2025,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+303,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,1111111111111111,2026,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+304,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,2222222222222222,2027,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+305,Fixed,Other,Single,High School,1970,52,Self-Employed,1234567890,3333333333333333,2028,Tablet,140000,2500,Purchase,Hyderabad,Visa,Online,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+306,Variable,Female,Married,Doctorate,1969,53,Employed,6543210987,4444444444444444,2029,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Offline,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+307,Fixed,Male,Married,Graduate,1975,47,Employed,1234567890,5555555555555555,2024,Desktop,250000,5500,Transfer,Mumbai,Visa,Online,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+308,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,6666666666666666,2025,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+309,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,7777777777777777,2026,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+310,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,8888888888888888,2027,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+311,Fixed,Other,Single,High School,1970,52,Self-Employed,1234567890,9999999999999999,2028,Tablet,140000,2500,Purchase,Hyderabad,Visa,Online,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+312,Variable,Female,Married,Doctorate,1969,53,Employed,6543210987,0000000000000000,2029,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Offline,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+313,Fixed,Male,Married,Graduate,1975,47,Employed,1234567890,1111111111111111,2024,Desktop,250000,5500,Transfer,Mumbai,Visa,Online,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+314,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,2222222222222222,2025,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+315,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,3333333333333333,2026,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+316,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,4444444444444444,2027,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+317,Fixed,Other,Single,High School,1970,52,Self-Employed,1234567890,5555555555555555,2028,Tablet,140000,2500,Purchase,Hyderabad,Visa,Online,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+318,Variable,Female,Married,Doctorate,1969,53,Employed,6543210987,6666666666666666,2029,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Offline,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+319,Fixed,Male,Married,Graduate,1975,47,Employed,1234567890,7777777777777777,2024,Desktop,250000,5500,Transfer,Mumbai,Visa,Online,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+320,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,8888888888888888,2025,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+321,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,9999999999999999,2026,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+322,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,0000000000000000,2027,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+323,Fixed,Other,Single,High School,1970,52,Self-Employed,1234567890,1111111111111111,2028,Tablet,140000,2500,Purchase,Hyderabad,Visa,Online,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+324,Variable,Female,Married,Doctorate,1969,53,Employed,6543210987,2222222222222222,2029,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Offline,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+325,Fixed,Male,Married,Graduate,1975,47,Employed,1234567890,3333333333333333,2024,Desktop,250000,5500,Transfer,Mumbai,Visa,Online,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+326,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,4444444444444444,2025,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+327,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,5555555555555555,2026,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+328,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,6666666666666666,2027,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+329,Fixed,Other,Single,High School,1970,52,Self-Employed,1234567890,7777777777777777,2028,Tablet,140000,2500,Purchase,Hyderabad,Visa,Online,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+330,Variable,Female,Married,Doctorate,1969,53,Employed,6543210987,8888888888888888,2029,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Offline,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+331,Fixed,Male,Married,Graduate,1975,47,Employed,1234567890,9999999999999999,2024,Desktop,250000,5500,Transfer,Mumbai,Visa,Online,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+332,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,0000000000000000,2025,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+333,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,1111111111111111,2026,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+334,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,2222222222222222,2027,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+335,Fixed,Other,Single,High School,1970,52,Self-Employed,1234567890,3333333333333333,2028,Tablet,140000,2500,Purchase,Hyderabad,Visa,Online,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+336,Variable,Female,Married,Doctorate,1969,53,Employed,6543210987,4444444444444444,2029,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Offline,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+337,Fixed,Male,Married,Graduate,1975,47,Employed,1234567890,5555555555555555,2024,Desktop,250000,5500,Transfer,Mumbai,Visa,Online,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+338,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,6666666666666666,2025,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+339,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,7777777777777777,2026,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+340,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,8888888888888888,2027,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+341,Fixed,Other,Single,High School,1970,52,Self-Employed,1234567890,9999999999999999,2028,Tablet,140000,2500,Purchase,Hyderabad,Visa,Online,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+342,Variable,Female,Married,Doctorate,1969,53,Employed,6543210987,0000000000000000,2029,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Offline,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+343,Fixed,Male,Married,Graduate,1975,47,Employed,1234567890,1111111111111111,2024,Desktop,250000,5500,Transfer,Mumbai,Visa,Online,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+344,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,2222222222222222,2025,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+345,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,3333333333333333,2026,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+346,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,4444444444444444,2027,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+347,Fixed,Other,Single,High School,1970,52,Self-Employed,1234567890,5555555555555555,2028,Tablet,140000,2500,Purchase,Hyderabad,Visa,Online,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+348,Variable,Female,Married,Doctorate,1969,53,Employed,6543210987,6666666666666666,2029,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Offline,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+349,Fixed,Male,Married,Graduate,1975,47,Employed,1234567890,7777777777777777,2024,Desktop,250000,5500,Transfer,Mumbai,Visa,Online,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+350,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,8888888888888888,2025,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+351,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,9999999999999999,2026,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+352,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,0000000000000000,2027,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+353,Fixed,Other,Single,High School,1970,52,Self-Employed,1234567890,1111111111111111,2028,Tablet,140000,2500,Purchase,Hyderabad,Visa,Online,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+354,Variable,Female,Married,Doctorate,1969,53,Employed,6543210987,2222222222222222,2029,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Offline,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+355,Fixed,Male,Married,Graduate,1975,47,Employed,1234567890,3333333333333333,2024,Desktop,250000,5500,Transfer,Mumbai,Visa,Online,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+356,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,4444444444444444,2025,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+357,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,5555555555555555,2026,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+358,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,6666666666666666,2027,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+359,Fixed,Other,Single,High School,1970,52,Self-Employed,1234567890,7777777777777777,2028,Tablet,140000,2500,Purchase,Hyderabad,Visa,Online,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+360,Variable,Female,Married,Doctorate,1969,53,Employed,6543210987,8888888888888888,2029,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Offline,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+361,Fixed,Male,Married,Graduate,1975,47,Employed,1234567890,9999999999999999,2024,Desktop,250000,5500,Transfer,Mumbai,Visa,Online,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+362,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,0000000000000000,2025,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+363,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,1111111111111111,2026,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+364,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,2222222222222222,2027,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+365,Fixed,Other,Single,High School,1970,52,Self-Employed,1234567890,3333333333333333,2028,Tablet,140000,2500,Purchase,Hyderabad,Visa,Online,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+366,Variable,Female,Married,Doctorate,1969,53,Employed,6543210987,4444444444444444,2029,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Offline,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+367,Fixed,Male,Married,Graduate,1975,47,Employed,1234567890,5555555555555555,2024,Desktop,250000,5500,Transfer,Mumbai,Visa,Online,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+368,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,6666666666666666,2025,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+369,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,7777777777777777,2026,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+370,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,8888888888888888,2027,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+371,Fixed,Other,Single,High School,1970,52,Self-Employed,1234567890,9999999999999999,2028,Tablet,140000,2500,Purchase,Hyderabad,Visa,Online,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+372,Variable,Female,Married,Doctorate,1969,53,Employed,6543210987,0000000000000000,2029,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Offline,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+373,Fixed,Male,Married,Graduate,1975,47,Employed,1234567890,1111111111111111,2024,Desktop,250000,5500,Transfer,Mumbai,Visa,Online,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+374,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,2222222222222222,2025,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+375,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,3333333333333333,2026,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+376,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,4444444444444444,2027,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+377,Fixed,Other,Single,High School,1970,52,Self-Employed,1234567890,5555555555555555,2028,Tablet,140000,2500,Purchase,Hyderabad,Visa,Online,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+378,Variable,Female,Married,Doctorate,1969,53,Employed,6543210987,6666666666666666,2029,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Offline,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+379,Fixed,Male,Married,Graduate,1975,47,Employed,1234567890,7777777777777777,2024,Desktop,250000,5500,Transfer,Mumbai,Visa,Online,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+380,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,8888888888888888,2025,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+381,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,9999999999999999,2026,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+382,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,0000000000000000,2027,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+383,Fixed,Other,Single,High School,1970,52,Self-Employed,1234567890,1111111111111111,2028,Tablet,140000,2500,Purchase,Hyderabad,Visa,Online,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+384,Variable,Female,Married,Doctorate,1969,53,Employed,6543210987,2222222222222222,2029,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Offline,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+385,Fixed,Male,Married,Graduate,1975,47,Employed,1234567890,3333333333333333,2024,Desktop,250000,5500,Transfer,Mumbai,Visa,Online,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+386,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,4444444444444444,2025,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+387,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,5555555555555555,2026,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+388,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,6666666666666666,2027,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+389,Fixed,Other,Single,High School,1970,52,Self-Employed,1234567890,7777777777777777,2028,Tablet,140000,2500,Purchase,Hyderabad,Visa,Online,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+390,Variable,Female,Married,Doctorate,1969,53,Employed,6543210987,8888888888888888,2029,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Offline,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+391,Fixed,Male,Married,Graduate,1975,47,Employed,1234567890,9999999999999999,2024,Desktop,250000,5500,Transfer,Mumbai,Visa,Online,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+392,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,0000000000000000,2025,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+393,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,1111111111111111,2026,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+394,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,2222222222222222,2027,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+395,Fixed,Other,Single,High School,1970,52,Self-Employed,1234567890,3333333333333333,2028,Tablet,140000,2500,Purchase,Hyderabad,Visa,Online,95000,1140000,5000,30,10,True,False,0.8,20,True,5,30,0
+396,Variable,Female,Married,Doctorate,1969,53,Employed,6543210987,4444444444444444,2029,Mobile,220000,3000,Withdrawal,Delhi,MasterCard,Offline,105000,1260000,4000,10,8,True,True,0.6,90,True,30,10,1
+397,Fixed,Male,Married,Graduate,1975,47,Employed,1234567890,5555555555555555,2024,Desktop,250000,5500,Transfer,Mumbai,Visa,Online,120000,1440000,3000,60,16,False,True,0.4,100,True,20,25,0
+398,Fixed,Female,Single,Doctorate,1982,40,Self-Employed,9876543210,6666666666666666,2025,Tablet,170000,1500,Purchase,Pune,MasterCard,Offline,95000,1140000,7000,30,10,False,True,0.3,20,False,5,30,1
+399,Variable,Male,Single,Graduate,1976,46,Unemployed,6543210987,7777777777777777,2026,Mobile,190000,5500,Withdrawal,Chennai,Visa,Online,105000,1260000,4000,70,6,False,False,0.2,90,True,30,10,0
+400,Fixed,Female,Single,Post Graduate,1985,37,Employed,9876543210,8888888888888888,2027,Desktop,210000,4000,Transfer,Bangalore,MasterCard,Offline,90000,1080000,6000,80,20,False,True,0.1,100,False,5,20,1
+401,Variable,Male,Single,Post Graduate,1977,45,Employed,4321650947,6234091234567890,2027,Desktop,250000,4600,Transfer,Kolkata,MasterCard,Online,110000,1320000,4000,80,14,True,False,0.42,65,True,5,25,0
+402,Fixed,Female,Single,Graduate,1988,34,Unemployed,2190735487,5897231409876543,2028,Mobile,240000,1500,Withdrawal,Mumbai,Visa,Offline,90000,1080000,3000,50,8,False,False,0.36,45,False,15,10,0
+403,Fixed,Female,Single,High School,1982,40,Self-Employed,6193470258,7598045643123456,2029,Mobile,200000,7000,Purchase,Chennai,Visa,Offline,180000,2160000,2000,70,2,True,True,0.22,55,False,20,30,1
+404,Fixed,Other,Married,Graduate,1975,47,Employed,5098647132,9462031754893214,2027,Mobile,220000,6200,Transfer,Bangalore,MasterCard,Online,100000,1200000,8000,20,12,True,False,0.18,70,True,20,40,0
+405,Variable,Male,Divorced,Doctorate,1990,32,Employed,3406879125,2389756412345678,2028,Tablet,200000,3500,Purchase,Hyderabad,Visa,Online,130000,1560000,7000,70,22,True,True,0.16,75,False,5,35,1
+406,Fixed,Other,Single,High School,1978,44,Unemployed,4987351062,4165978134567890,2024,Desktop,180000,2500,Withdrawal,Delhi,MasterCard,Offline,60000,720000,4000,80,6,True,True,0.12,80,True,25,15,1
+407,Fixed,Female,Married,High School,1965,57,Self-Employed,3256981407,9147023654781234,2028,Mobile,240000,8000,Transfer,Mumbai,Visa,Offline,110000,1320000,5000,90,18,False,True,0.08,85,False,5,25,0
+408,Variable,Other,Single,Post Graduate,1972,50,Employed,4687213905,5047382956741234,2024,Desktop,220000,2500,Withdrawal,Pune,MasterCard,Offline,150000,1800000,3000,20,14,False,False,0.04,90,False,20,30,1
+409,Fixed,Female,Single,High School,1985,37,Employed,3589670124,3814670982354761,2028,Mobile,230000,7500,Purchase,Kolkata,Visa,Offline,70000,840000,8000,60,10,False,False,0.02,95,True,25,40,0
+410,Fixed,Male,Married,High School,1976,46,Self-Employed,4123586970,6702983715642379,2027,Tablet,210000,3000,Transfer,Delhi,MasterCard,Offline,180000,2160000,2000,40,8,False,True,0.84,65,False,5,20,0
+411,Variable,Male,Married,Graduate,1982,40,Unemployed,2548967310,2897038465287459,2029,Mobile,200000,6500,Withdrawal,Bangalore,Visa,Online,130000,1560000,6000,100,12,False,False,0.76,75,False,20,35,1
+412,Fixed,Male,Single,Post Graduate,1979,43,Employed,3685014927,8739456021387695,2026,Desktop,190000,4000,Purchase,Chennai,MasterCard,Offline,60000,720000,5000,70,6,False,True,0.68,80,True,30,15,1
+413,Fixed,Other,Divorced,High School,1970,52,Self-Employed,5123906874,4376091283745692,2025,Mobile,220000,2500,Transfer,Hyderabad,Visa,Online,150000,1800000,7000,40,2,False,False,0.62,85,True,5,25,1
+414,Variable,Female,Married,Graduate,1969,53,Employed,4356781249,3209847165948723,2024,Mobile,230000,5000,Withdrawal,Mumbai,MasterCard,Online,110000,1320000,4000,90,18,False,True,0.54,90,False,25,40,1
+415,Fixed,Other,Married,Doctorate,1987,35,Unemployed,6512349870,9246817309456781,2023,Desktop,240000,8000,Purchase,Pune,Visa,Offline,70000,840000,3000,20,14,False,False,0.46,95,True,20,30,1
+416,Fixed,Male,Single,Graduate,1971,51,Employed,3789456721,1894057263849175,2027,Mobile,250000,3500,Transfer,Kolkata,MasterCard,Online,130000,1560000,6000,100,10,True,False,0.38,65,True,5,20,1
+417,Variable,Female,Single,High School,1973,49,Self-Employed,5369874210,7392184502876159,2029,Tablet,200000,7500,Withdrawal,Delhi,Visa,Offline,60000,720000,2000,80,8,True,True,0.32,70,False,20,35,0
+418,Fixed,Female,Married,Post Graduate,1983,39,Employed,1875462390,4738592068173456,2024,Desktop,180000,3000,Purchase,Bangalore,MasterCard,Online,150000,1800000,8000,40,2,True,False,0.24,75,True,30,15,0
+419,Fixed,Other,Single,Graduate,1974,48,Unemployed,5213649870,1384057296531874,2023,Mobile,220000,4000,Transfer,Chennai,Visa,Online,110000,1320000,4000,90,18,False,False,0.16,80,False,5,25,1
+420,Variable,Male,Single,High School,1978,44,Employed,3728401695,2946508173920874,2025,Mobile,230000,6200,Withdrawal,Hyderabad,MasterCard,Offline,130000,1560000,3000,20,14,True,True,0.08,85,True,25,40,0
+421,Fixed,Female,Married,Doctorate,1980,42,Self-Employed,6154928307,4928310765392847,2028,Desktop,240000,7000,Transfer,Mumbai,Visa,Offline,70000,840000,5000,100,10,False,False,0.06,65,False,5,20,0
+422,Fixed,Male,Divorced,Graduate,1967,55,Employed,4692703158,5837402961857034,2024,Tablet,250000,2500,Purchase,Pune,MasterCard,Online,130000,1560000,4000,80,8,False,True,0.92,70,True,20,35,1
+423,Variable,Other,Single,Post Graduate,1975,47,Unemployed,5293647015,9105768249371564,2029,Mobile,200000,1500,Withdrawal,Kolkata,Visa,Offline,60000,720000,6000,90,18,True,True,0.86,75,False,5,25,1
+424,Fixed,Female,Married,High School,1979,43,Employed,8347502961,4019237685920487,2026,Mobile,230000,6500,Transfer,Delhi,MasterCard,Online,130000,1560000,2000,20,14,False,True,0.82,80,True,25,40,0
+425,Fixed,Female,Single,High School,1970,52,Self-Employed,9286430175,7382504192573086,2027,Desktop,190000,7000,Purchase,Bangalore,Visa,Online,150000,1800000,5000,40,2,True,False,0.78,85,False,30,15,1
+426,Variable,Male,Single,Graduate,1978,44,Unemployed,1875639024,6932071548029361,2025,Mobile,220000,3500,Transfer,Chennai,MasterCard,Online,110000,1320000,3000,90,18,True,False,0.74,90,True,5,20,0
+427,Fixed,Other,Married,High School,1985,37,Employed,7543092861,9375612406853902,2024,Tablet,240000,8000,Withdrawal,Hyderabad,Visa,Offline,130000,1560000,4000,80,8,False,True,0.7,70,False,20,35,1
+428,Fixed,Female,Married,Post Graduate,1987,35,Self-Employed,3026857491,8179430562874903,2023,Desktop,250000,3000,Transfer,Mumbai,MasterCard,Online,130000,1560000,6000,20,14,False,True,0.66,75,True,25,40,0
+429,Variable,Other,Single,High School,1969,53,Employed,8459306127,5901846723917548,2029,Mobile,200000,7500,Purchase,Pune,Visa,Offline,60000,720000,2000,90,18,True,False,0.62,80,False,5,25,1
+430,Fixed,Male,Married,Doctorate,1980,42,Unemployed,1859476302,4025879163547802,2027,Desktop,230000,4000,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,4000,20,14,True,True,0.58,90,True,20,35,0
+431,Fixed,Female,Married,Graduate,1982,40,Employed,5712098436,9851736409278513,2025,Mobile,220000,6200,Transfer,Delhi,Visa,Online,130000,1560000,5000,80,8,True,False,0.54,70,False,25,40,1
+432,Variable,Other,Divorced,Graduate,1977,45,Self-Employed,8746930125,7453891062738904,2026,Tablet,240000,1500,Purchase,Bangalore,MasterCard,Offline,130000,1560000,6000,90,18,False,False,0.5,75,True,5,20,0
+433,Fixed,Female,Married,Post Graduate,1983,39,Employed,2095673814,5483926710953487,2023,Desktop,250000,7000,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,20,14,True,False,0.46,80,False,20,35,1
+434,Fixed,Male,Single,High School,1979,43,Unemployed,5981207346,9845612730593847,2025,Mobile,200000,2500,Transfer,Hyderabad,MasterCard,Online,60000,720000,4000,80,8,True,True,0.42,90,True,25,40,1
+435,Variable,Other,Married,Doctorate,1973,49,Employed,3459821076,4876125904832761,2029,Tablet,220000,7500,Purchase,Mumbai,Visa,Offline,130000,1560000,2000,90,18,True,False,0.38,70,False,5,25,0
+436,Fixed,Female,Single,High School,1970,52,Employed,1982736451,6794501823769054,2028,Mobile,240000,3000,Withdrawal,Kolkata,MasterCard,Offline,130000,1560000,6000,20,14,False,True,0.34,75,True,20,35,1
+437,Fixed,Other,Married,Graduate,1985,37,Self-Employed,6789430512,9145203761987456,2023,Desktop,250000,6200,Purchase,Delhi,Visa,Online,130000,1560000,3000,90,18,False,False,0.3,80,False,25,40,1
+438,Variable,Male,Single,High School,1967,55,Employed,1982347650,3890761459236870,2027,Mobile,200000,4000,Transfer,Bangalore,MasterCard,Online,60000,720000,5000,80,8,True,False,0.26,90,True,5,20,0
+439,Fixed,Other,Married,Post Graduate,1975,47,Unemployed,8735640129,7932480157629043,2029,Desktop,220000,1500,Withdrawal,Chennai,Visa,Offline,130000,1560000,2000,20,14,True,True,0.22,70,False,20,35,1
+440,Fixed,Female,Single,Doctorate,1988,34,Employed,8943025761,4025673198456709,2023,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,18,False,False,0.18,75,True,25,40,0
+441,Variable,Male,Single,Graduate,1978,44,Self-Employed,2398765014,9826401357689204,2025,Tablet,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,3000,20,14,False,False,0.14,80,False,5,25,0
+442,Fixed,Other,Married,High School,1979,43,Employed,2139456870,5293476108753029,2029,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,90,18,True,True,0.1,70,True,20,35,1
+443,Fixed,Female,Married,Post Graduate,1982,40,Unemployed,2984637501,8926140738950612,2026,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,20,14,False,False,0.06,75,False,25,40,1
+444,Variable,Male,Single,Graduate,1970,52,Employed,9056781432,5702389150643782,2028,Mobile,200000,6500,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,80,8,True,False,0.02,90,True,5,20,1
+445,Fixed,Other,Divorced,Doctorate,1973,49,Self-Employed,2785049613,6540281739054812,2027,Desktop,220000,4000,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,20,14,True,True,0.9,70,False,20,35,0
+446,Fixed,Female,Single,High School,1978,44,Employed,1876534290,3124790568349275,2025,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,18,False,True,0.84,75,True,25,40,0
+447,Variable,Male,Married,Graduate,1981,41,Unemployed,4608759312,4912370856927310,2024,Tablet,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,20,14,True,False,0.78,80,False,5,25,0
+448,Fixed,Other,Single,High School,1972,50,Employed,1058793462,4729630857194306,2028,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,90,18,False,True,0.74,70,True,20,35,0
+449,Fixed,Female,Married,Post Graduate,1980,42,Self-Employed,3452981670,8765120345902187,2025,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,20,14,False,False,0.7,75,False,25,40,1
+450,Variable,Male,Single,Graduate,1966,56,Employed,3095864271,9743025681793450,2029,Desktop,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,80,8,True,True,0.66,90,True,5,20,0
+451,Fixed,Other,Divorced,High School,1974,48,Unemployed,5732981046,8956213074850213,2026,Mobile,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,90,18,True,False,0.62,70,False,20,35,1
+452,Fixed,Female,Single,High School,1979,43,Employed,3456278901,1045678239051624,2025,Tablet,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,20,14,False,True,0.58,75,True,25,40,0
+453,Variable,Male,Married,Graduate,1981,41,Self-Employed,3456709218,2097856123045987,2023,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.54,80,False,5,25,0
+454,Fixed,Other,Single,Post Graduate,1972,50,Employed,2109873465,7329056418709325,2029,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,20,14,True,True,0.5,70,True,20,35,0
+455,Fixed,Female,Married,High School,1980,42,Unemployed,3458712908,4561238095729048,2027,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,18,False,False,0.46,75,False,25,40,1
+456,Variable,Male,Single,High School,1966,56,Employed,6871230594,1305968742305987,2025,Desktop,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,20,14,True,True,0.42,90,True,5,20,0
+457,Fixed,Other,Divorced,High School,1974,48,Self-Employed,5432819076,3490827350168290,2023,Mobile,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,8,True,False,0.38,70,False,20,35,1
+458,Fixed,Female,Single,High School,1979,43,Employed,2389657421,2890456719238075,2029,Tablet,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,18,False,True,0.34,75,True,25,40,0
+459,Variable,Male,Married,Graduate,1981,41,Unemployed,9876124503,2390845123075984,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,20,14,True,False,0.3,80,False,5,25,0
+460,Fixed,Other,Single,Post Graduate,1972,50,Employed,2340987561,4025769834109527,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,90,18,True,True,0.26,70,True,20,35,0
+461,Fixed,Female,Married,High School,1980,42,Self-Employed,1236098574,2395048716098327,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,80,8,False,False,0.22,75,False,25,40,1
+462,Variable,Male,Single,High School,1966,56,Employed,4875120346,2390875621340985,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.18,80,True,5,20,0
+463,Fixed,Other,Divorced,High School,1974,48,Unemployed,9038576142,4092375618240953,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,20,14,True,False,0.14,70,False,20,35,1
+464,Fixed,Female,Single,High School,1979,43,Employed,2345091765,4039576210458973,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,18,False,True,0.1,75,True,25,40,0
+465,Variable,Male,Married,Graduate,1981,41,Unemployed,6572304891,3240956712850347,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,20,14,True,False,0.06,80,False,5,25,0
+466,Fixed,Other,Single,Post Graduate,1972,50,Employed,4539876201,3027640951876234,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,90,18,True,True,0.92,70,True,20,35,0
+467,Fixed,Female,Married,High School,1980,42,Self-Employed,2371098654,3409576219840562,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,20,14,False,False,0.86,75,False,25,40,1
+468,Variable,Male,Single,High School,1966,56,Employed,8761209345,2309485761230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.82,80,True,5,20,0
+469,Fixed,Other,Divorced,High School,1974,48,Unemployed,2348907561,3209875461230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,8,True,False,0.78,70,False,20,35,1
+470,Fixed,Female,Single,High School,1979,43,Employed,6789342051,2309845671230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,18,False,True,0.74,75,True,25,40,0
+471,Variable,Male,Married,Graduate,1981,41,Unemployed,1893452076,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.7,80,False,5,25,0
+472,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,8,True,True,0.66,70,True,20,35,0
+473,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,2309847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,18,False,False,0.62,75,False,25,40,1
+474,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.58,80,True,5,20,0
+475,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,8,True,False,0.54,70,False,20,35,1
+476,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,18,False,True,0.5,75,True,25,40,0
+477,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.46,80,False,5,25,0
+478,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,8,True,True,0.42,70,True,20,35,0
+479,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,18,False,False,0.38,75,False,25,40,1
+480,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.34,80,True,5,20,0
+481,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,8,True,False,0.3,70,False,20,35,1
+482,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,18,False,True,0.26,75,True,25,40,0
+483,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.22,80,False,5,25,0
+484,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,8,True,True,0.18,70,True,20,35,0
+485,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,18,False,False,0.14,75,False,25,40,1
+486,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.1,80,True,5,20,0
+487,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,8,True,False,0.06,70,False,20,35,1
+488,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,18,False,True,0.02,75,True,25,40,0
+489,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.9,80,False,5,25,0
+490,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,8,True,True,0.86,70,True,20,35,0
+491,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,18,False,False,0.82,75,False,25,40,1
+492,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.78,80,True,5,20,0
+493,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,8,True,False,0.74,70,False,20,35,1
+494,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,18,False,True,0.7,75,True,25,40,0
+495,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.66,80,False,5,25,0
+496,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,8,True,True,0.62,70,True,20,35,0
+497,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,18,False,False,0.58,75,False,25,40,1
+498,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.54,80,True,5,20,0
+499,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,8,True,False,0.5,70,False,20,35,1
+500,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,18,False,True,0.46,75,True,25,40,0
+501,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.42,80,False,5,25,0
+502,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,8,True,True,0.38,70,True,20,35,0
+503,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,18,False,False,0.34,75,False,25,40,1
+504,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.3,80,True,5,20,0
+505,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,8,True,False,0.26,70,False,20,35,1
+506,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,18,False,True,0.22,75,True,25,40,0
+507,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.18,80,False,5,25,0
+508,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,8,True,True,0.14,70,True,20,35,0
+509,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,18,False,False,0.1,75,False,25,40,1
+510,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.06,80,True,5,20,0
+511,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,8,True,False,0.02,70,False,20,35,1
+512,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,18,False,True,0.98,75,True,25,40,0
+513,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.94,80,False,5,25,0
+514,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,8,True,True,0.9,70,True,20,35,0
+515,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,18,False,False,0.86,75,False,25,40,1
+516,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.82,80,True,5,20,0
+517,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,8,True,False,0.78,70,False,20,35,1
+518,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,18,False,True,0.74,75,True,25,40,0
+519,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.7,80,False,5,25,0
+520,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,8,True,True,0.66,70,True,20,35,0
+521,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,18,False,False,0.62,75,False,25,40,1
+522,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.58,80,True,5,20,0
+523,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,8,True,False,0.54,70,False,20,35,1
+524,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,18,False,True,0.5,75,True,25,40,0
+525,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.46,80,False,5,25,0
+526,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,8,True,True,0.42,70,True,20,35,0
+527,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,18,False,False,0.38,75,False,25,40,1
+528,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.34,80,True,5,20,0
+529,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,8,True,False,0.3,70,False,20,35,1
+530,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,18,False,True,0.26,75,True,25,40,0
+531,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.22,80,False,5,25,0
+532,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,8,True,True,0.18,70,True,20,35,0
+533,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,18,False,False,0.14,75,False,25,40,1
+534,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.1,80,True,5,20,0
+535,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,8,True,False,0.06,70,False,20,35,1
+536,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,18,False,True,0.02,75,True,25,40,0
+537,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.98,80,False,5,25,0
+538,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,8,True,True,0.94,70,True,20,35,0
+539,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,18,False,False,0.9,75,False,25,40,1
+540,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.86,80,True,5,20,0
+541,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,8,True,False,0.82,70,False,20,35,1
+542,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,18,False,True,0.78,75,True,25,40,0
+543,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.74,80,False,5,25,0
+544,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,8,True,True,0.7,70,True,20,35,0
+545,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,18,False,False,0.66,75,False,25,40,1
+546,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.62,80,True,5,20,0
+547,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,8,True,False,0.58,70,False,20,35,1
+548,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,18,False,True,0.54,75,True,25,40,0
+549,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.5,80,False,5,25,0
+550,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,8,True,True,0.46,70,True,20,35,0
+551,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,18,False,False,0.42,75,False,25,40,1
+552,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.38,80,True,5,20,0
+553,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,8,True,False,0.34,70,False,20,35,1
+554,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,18,False,True,0.3,75,True,25,40,0
+555,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.26,80,False,5,25,0
+556,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,8,True,True,0.22,70,True,20,35,0
+557,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,18,False,False,0.18,75,False,25,40,1
+558,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.14,80,True,5,20,0
+559,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,8,True,False,0.1,70,False,20,35,1
+560,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,18,False,True,0.06,75,True,25,40,0
+561,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.02,80,False,5,25,0
+562,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,8,True,True,0.98,70,True,20,35,0
+563,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,18,False,False,0.94,75,False,25,40,1
+564,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.9,80,True,5,20,0
+565,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,8,True,False,0.86,70,False,20,35,1
+566,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,18,False,True,0.82,75,True,25,40,0
+567,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.78,80,False,5,25,0
+568,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,8,True,True,0.74,70,True,20,35,0
+569,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,18,False,False,0.7,75,False,25,40,1
+570,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.66,80,True,5,20,0
+571,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,8,True,False,0.62,70,False,20,35,1
+572,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,18,False,True,0.58,75,True,25,40,0
+573,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.54,80,False,5,25,0
+574,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,8,True,True,0.5,70,True,20,35,0
+575,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,18,False,False,0.46,75,False,25,40,1
+576,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.42,80,True,5,20,0
+577,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,8,True,False,0.38,70,False,20,35,1
+578,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,18,False,True,0.34,75,True,25,40,0
+579,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.3,80,False,5,25,0
+580,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,8,True,True,0.26,70,True,20,35,0
+581,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,18,False,False,0.22,75,False,25,40,1
+582,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.18,80,True,5,20,0
+583,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,8,True,False,0.14,70,False,20,35,1
+584,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,18,False,True,0.1,75,True,25,40,0
+585,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.06,80,False,5,25,0
+586,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,8,True,True,0.02,70,True,20,35,0
+587,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,18,False,False,0.98,75,False,25,40,1
+588,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.94,80,True,5,20,0
+589,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,8,True,False,0.9,70,False,20,35,1
+590,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,18,False,True,0.86,75,True,25,40,0
+591,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.82,80,False,5,25,0
+592,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,8,True,True,0.78,70,True,20,35,0
+593,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,18,False,False,0.74,75,False,25,40,1
+594,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.7,80,True,5,20,0
+595,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,8,True,False,0.66,70,False,20,35,1
+596,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,18,False,True,0.62,75,True,25,40,0
+597,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.58,80,False,5,25,0
+598,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,8,True,True,0.54,70,True,20,35,0
+599,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,18,False,False,0.5,75,False,25,40,1
+600,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.46,80,True,5,20,0
+601,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,8,True,False,0.42,70,False,20,35,1
+602,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,18,False,True,0.38,75,True,25,40,0
+603,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.34,80,False,5,25,0
+604,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,8,True,True,0.3,70,True,20,35,0
+605,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,18,False,False,0.26,75,False,25,40,1
+606,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+607,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,8,True,False,0.18,70,False,20,35,1
+608,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,18,False,True,0.14,75,True,25,40,0
+609,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+610,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,8,True,True,0.06,70,True,20,35,0
+611,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,18,False,False,0.02,75,False,25,40,1
+612,Variable,Female,Married,Graduate,1985,37,Employed,2370568942,3209847561230987,2023,Mobile,240000,3000,Purchase,Chennai,Visa,Offline,90000,1080000,5000,40,10,True,False,0.34,80,True,5,25,0
+613,Fixed,Male,Single,High School,1992,30,Employed,9876543210,5432167890123456,2027,Mobile,200000,4500,Withdrawal,Pune,MasterCard,Online,60000,720000,2000,90,15,True,True,0.3,70,False,20,35,0
+614,Fixed,Other,Married,Post Graduate,1970,52,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Transfer,Delhi,Visa,Online,130000,1560000,6000,80,20,True,False,0.26,75,True,25,40,1
+615,Variable,Female,Divorced,Doctorate,1982,40,Unemployed,9872064315,3209847561230987,2025,Mobile,250000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+616,Fixed,Male,Single,High School,1976,46,Employed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+617,Fixed,Other,Married,Post Graduate,1987,35,Self-Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+618,Variable,Female,Married,Graduate,1978,44,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+619,Fixed,Other,Single,Post Graduate,1975,47,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+620,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+621,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+622,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+623,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+624,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+625,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+626,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+627,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+628,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+629,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+630,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+631,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+632,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+633,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+634,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+635,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+636,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+637,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+638,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+639,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+640,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+641,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+642,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+643,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+644,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+645,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+646,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+647,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+648,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+649,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+650,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+651,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+652,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+653,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+654,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+655,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+656,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+657,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+658,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+659,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+660,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+661,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+662,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+663,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+664,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+665,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+666,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+667,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+668,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+669,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+670,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+671,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+672,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+673,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+674,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+675,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+676,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+677,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+678,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+679,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+680,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+681,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+682,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+683,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+684,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+685,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+686,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+687,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+688,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+689,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+690,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+691,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+692,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+693,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+694,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+695,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+696,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+697,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+698,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+699,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+700,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+701,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+702,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+703,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+704,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+705,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+706,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+707,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+708,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+709,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+710,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+711,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+712,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+713,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+714,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+715,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+716,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+717,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+718,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+719,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+720,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+721,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+722,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+723,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+724,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+725,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+726,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+727,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+728,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+729,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+730,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+731,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+732,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+733,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+734,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+735,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+736,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+737,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+738,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+739,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+740,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+741,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+742,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+743,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+744,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+745,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+746,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+747,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+748,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+749,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+750,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+751,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+752,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+753,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+754,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+755,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+756,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+757,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+758,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+759,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+760,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+761,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+762,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+763,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+764,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+765,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+766,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+767,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+768,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+769,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+770,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+771,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+772,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+773,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+774,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+775,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+776,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+777,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+778,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+779,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+780,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+781,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+782,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+783,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+784,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+785,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+786,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+787,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+788,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+789,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+790,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+791,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+792,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+793,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+794,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+795,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+796,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+797,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+798,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+799,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+800,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+801,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+802,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+803,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+804,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+805,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+806,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+807,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+808,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+809,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+810,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+811,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+812,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+813,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+814,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+815,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+816,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+817,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+818,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+819,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+820,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+821,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+822,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+823,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+824,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+825,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+826,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+827,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+828,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+829,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+830,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+831,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+832,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+833,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+834,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+835,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+836,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+837,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+838,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+839,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+840,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+841,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+842,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+843,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+844,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+845,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+846,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+847,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+848,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+849,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+850,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+851,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+852,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+853,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+854,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+855,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+856,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+857,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+858,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+859,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+860,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+861,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+862,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+863,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+864,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+865,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+866,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+867,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+868,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+869,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+870,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+871,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+872,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+873,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+874,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+875,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+876,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+877,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+878,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+879,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+880,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+881,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+882,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+883,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+884,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+885,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+886,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+887,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+888,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+889,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+890,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+891,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+892,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+893,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+894,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+895,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+896,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+897,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+898,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+899,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+900,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+901,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+902,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+903,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+904,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+905,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+906,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+907,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+908,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+909,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+910,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+911,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+912,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+913,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+914,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+915,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+916,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+917,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+918,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+919,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+920,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+921,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+922,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+923,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+924,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+925,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+926,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+927,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+928,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+929,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+930,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+931,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+932,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+933,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+934,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+935,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+936,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+937,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+938,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+939,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+940,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+941,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+942,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+943,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+944,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+945,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+946,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+947,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+948,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+949,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+950,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+951,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+952,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+953,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+954,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+955,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+956,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+957,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+958,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+959,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+960,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+961,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+962,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+963,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+964,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+965,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+966,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+967,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+968,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+969,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+970,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+971,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+972,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+973,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+974,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+975,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+976,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+977,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+978,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+979,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+980,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+981,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+982,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+983,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+984,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+985,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+986,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+987,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+988,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+989,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+990,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+991,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+992,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.26,75,False,25,40,1
+993,Variable,Male,Single,High School,1966,56,Employed,9872064315,3209847561230987,2025,Tablet,200000,4000,Purchase,Bangalore,MasterCard,Offline,60000,720000,5000,90,18,True,True,0.22,80,True,5,20,0
+994,Fixed,Other,Divorced,High School,1974,48,Unemployed,2304987651,3209847561230987,2023,Desktop,220000,3500,Withdrawal,Chennai,Visa,Online,130000,1560000,3000,80,15,True,False,0.18,70,False,20,35,1
+995,Fixed,Female,Single,High School,1979,43,Employed,2370568942,3209847561230987,2029,Mobile,250000,7000,Transfer,Hyderabad,MasterCard,Online,130000,1560000,4000,90,10,False,True,0.14,75,True,25,40,0
+996,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,Visa,Offline,60000,720000,2000,90,18,True,False,0.1,80,False,5,25,0
+997,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,MasterCard,Online,130000,1560000,6000,80,15,True,True,0.06,70,True,20,35,0
+998,Fixed,Female,Married,High School,1980,42,Self-Employed,2370568942,3209847561230987,2023,Mobile,240000,1500,Transfer,Delhi,Visa,Online,130000,1560000,2000,90,20,False,False,0.02,75,False,25,40,1
+999,Variable,Male,Married,Graduate,1981,41,Unemployed,9872064315,3209847561230987,2027,Mobile,200000,3000,Purchase,Mumbai,MasterCard,Offline,60000,720000,2000,90,18,True,False,0.34,80,True,5,25,0
+1000,Fixed,Other,Single,Post Graduate,1972,50,Employed,4309567209,3209847561230987,2025,Desktop,230000,6200,Withdrawal,Kolkata,Visa,Online,130000,1560000,6000,80,15,True,True,0.3,70,True,20,35,0
+
