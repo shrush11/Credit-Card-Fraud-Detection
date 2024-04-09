@@ -1,4 +1,4 @@
-1. Clone the project repository from GitHub.
+1. Clone the project repository from GitHub. Using https://github.com/shrush11/Credit-Card-Fraud-Detection.git
 
 2. Open Visual Studio Code for editing.
 
